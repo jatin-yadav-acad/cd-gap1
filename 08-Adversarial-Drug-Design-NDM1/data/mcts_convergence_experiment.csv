@@ -1,0 +1,6 @@
+simulation_budget,mean_q_value,std_q_value,nash_equilibrium_rate_pct,policy_entropy,mean_latency_ms,mean_game_steps
+5,11.923,1.508,0.0,1.006,12.6,4.0
+15,10.435,1.494,0.0,0.727,36.86,4.0
+30,10.976,0.973,0.0,0.654,66.58,4.0
+60,11.128,1.338,0.0,0.449,117.48,4.0
+100,11.555,1.881,0.0,0.456,177.49,4.0

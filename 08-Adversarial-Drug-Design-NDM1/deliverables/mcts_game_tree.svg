@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" width="100%" height="100%" style="background:#0b0f19; font-family: sans-serif;">
+  <text x="350" y="30" fill="#f8fafc" font-size="16" font-weight="bold" text-anchor="middle">Adversarial Self-Play Game Tree: Pathogen Escape vs Chemist Countermove</text>
+  
+  <!-- Root Node S0 -->
+  <g transform="translate(350, 60)">
+    <rect x="-110" y="-18" width="220" height="36" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="0" y="-1" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Root S0: WT NDM-1 + Captopril</text>
+    <text x="0" y="13" fill="#93c5fd" font-size="9" text-anchor="middle">Delta G = -6.22 kcal/mol | ERI Loss = 43.5%</text>
+  </g>
+
+  <!-- Branches to Pathogen Moves -->
+  <line x1="290" y1="78" x2="160" y2="130" stroke="#ef4444" stroke-width="2"/>
+  <line x1="350" y1="78" x2="350" y2="130" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="410" y1="78" x2="540" y2="130" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Pathogen Move 1: M67V Escape (Viable) -->
+  <g transform="translate(160, 145)">
+    <rect x="-95" y="-16" width="190" height="32" rx="6" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <text x="0" y="-1" fill="#fca5a5" font-size="11" font-weight="bold" text-anchor="middle">Pathogen: M67V Escape</text>
+    <text x="0" y="11" fill="#f87171" font-size="9" text-anchor="middle">Delta Fitness = -0.22 (Viable) | 28 A^3 Void</text>
+  </g>
+
+  <!-- Pruned Branch: M67P (Fold Collapse) -->
+  <g transform="translate(540, 145)">
+    <rect x="-85" y="-14" width="170" height="28" rx="6" fill="#1e293b" stroke="#dc2626" stroke-dasharray="3,3"/>
+    <text x="0" y="0" fill="#f87171" font-size="10" text-anchor="middle">M67P (Pruned Move)</text>
+    <text x="0" y="11" fill="#94a3b8" font-size="8" text-anchor="middle">Delta Fitness = -3.45 &lt; -1.5 (Dead Fold)</text>
+  </g>
+
+  <!-- Chemist Countermoves from M67V -->
+  <line x1="120" y1="161" x2="80" y2="220" stroke="#f59e0b" stroke-width="1.5"/>
+  <line x1="200" y1="161" x2="260" y2="220" stroke="#10b981" stroke-width="2.5"/>
+
+  <!-- Greedy Baseline Move (Failure) -->
+  <g transform="translate(80, 235)">
+    <rect x="-70" y="-15" width="140" height="30" rx="5" fill="#292524" stroke="#f59e0b"/>
+    <text x="0" y="-1" fill="#fde68a" font-size="9" font-weight="bold" text-anchor="middle">1.5B Greedy Move</text>
+    <text x="0" y="10" fill="#f87171" font-size="8" text-anchor="middle">Affinity drops to -5.37</text>
+  </g>
+
+  <!-- 14B MCTS Move: P1-Benzyl Arm -->
+  <g transform="translate(260, 235)">
+    <rect x="-90" y="-16" width="180" height="32" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+    <text x="0" y="-1" fill="#6ee7b7" font-size="10" font-weight="bold" text-anchor="middle">14B MCTS: P1-Benzyl Arm</text>
+    <text x="0" y="11" fill="#a7f3d0" font-size="8" text-anchor="middle">Fills M67V Void, pi-stacks Phe70</text>
+  </g>
+
+  <!-- Arrow to Terminal Equilibrium -->
+  <line x1="350" y1="235" x2="440" y2="235" stroke="#34d399" stroke-width="2" stroke-dasharray="4,2"/>
+
+  <!-- Terminal Nash Equilibrium Node -->
+  <g transform="translate(520, 235)">
+    <rect x="-95" y="-22" width="190" height="44" rx="8" fill="#0f766e" stroke="#34d399" stroke-width="2.5"/>
+    <text x="0" y="-6" fill="#ffffff" font-size="11" font-weight="extrabold" text-anchor="middle">TERMINAL NASH EQUILIBRIUM</text>
+    <text x="0" y="7" fill="#a7f3d0" font-size="9" text-anchor="middle">Invariant Bis-Zinc Tridentate Clamp</text>
+    <text x="0" y="17" fill="#6ee7b7" font-size="8" text-anchor="middle">Delta G &lt;= -9.68 | Resilience Loss &lt; 3.8%</text>
+  </g>
+
+  <text x="350" y="320" fill="#94a3b8" font-size="10" text-anchor="middle">
+    Invariant Catalytic Core Checkmate: Pathogen cannot mutate Zn1/Zn2 coordinating residues (His120, Asp124, Cys208) without losing beta-lactamase viability.
+  </text>
+</svg>

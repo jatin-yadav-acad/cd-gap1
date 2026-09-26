@@ -1,0 +1,758 @@
+{
+  "M67": {
+    "position": 67,
+    "wt_aa": "M",
+    "is_catalytic_core": false,
+    "viable_mutations_count": 18,
+    "mutations": {
+      "A": {
+        "delta_fitness": 1.051,
+        "is_viable": true
+      },
+      "C": {
+        "delta_fitness": -2.98,
+        "is_viable": false
+      },
+      "D": {
+        "delta_fitness": -0.062,
+        "is_viable": true
+      },
+      "E": {
+        "delta_fitness": 0.281,
+        "is_viable": true
+      },
+      "F": {
+        "delta_fitness": -0.313,
+        "is_viable": true
+      },
+      "G": {
+        "delta_fitness": 0.581,
+        "is_viable": true
+      },
+      "H": {
+        "delta_fitness": -0.75,
+        "is_viable": true
+      },
+      "I": {
+        "delta_fitness": 0.637,
+        "is_viable": true
+      },
+      "K": {
+        "delta_fitness": 0.008,
+        "is_viable": true
+      },
+      "L": {
+        "delta_fitness": 0.988,
+        "is_viable": true
+      },
+      "N": {
+        "delta_fitness": -0.443,
+        "is_viable": true
+      },
+      "P": {
+        "delta_fitness": -0.414,
+        "is_viable": true
+      },
+      "Q": {
+        "delta_fitness": 0.288,
+        "is_viable": true
+      },
+      "R": {
+        "delta_fitness": 0.413,
+        "is_viable": true
+      },
+      "S": {
+        "delta_fitness": 0.055,
+        "is_viable": true
+      },
+      "T": {
+        "delta_fitness": 0.321,
+        "is_viable": true
+      },
+      "V": {
+        "delta_fitness": 1.164,
+        "is_viable": true
+      },
+      "W": {
+        "delta_fitness": -0.939,
+        "is_viable": true
+      },
+      "Y": {
+        "delta_fitness": -0.653,
+        "is_viable": true
+      }
+    }
+  },
+  "K211": {
+    "position": 211,
+    "wt_aa": "K",
+    "is_catalytic_core": false,
+    "viable_mutations_count": 19,
+    "mutations": {
+      "A": {
+        "delta_fitness": 2.173,
+        "is_viable": true
+      },
+      "C": {
+        "delta_fitness": -0.621,
+        "is_viable": true
+      },
+      "D": {
+        "delta_fitness": 1.092,
+        "is_viable": true
+      },
+      "E": {
+        "delta_fitness": 0.529,
+        "is_viable": true
+      },
+      "F": {
+        "delta_fitness": 2.091,
+        "is_viable": true
+      },
+      "G": {
+        "delta_fitness": 2.433,
+        "is_viable": true
+      },
+      "H": {
+        "delta_fitness": 0.944,
+        "is_viable": true
+      },
+      "I": {
+        "delta_fitness": 1.645,
+        "is_viable": true
+      },
+      "L": {
+        "delta_fitness": 2.334,
+        "is_viable": true
+      },
+      "M": {
+        "delta_fitness": 1.044,
+        "is_viable": true
+      },
+      "N": {
+        "delta_fitness": 1.609,
+        "is_viable": true
+      },
+      "P": {
+        "delta_fitness": 1.571,
+        "is_viable": true
+      },
+      "Q": {
+        "delta_fitness": 1.195,
+        "is_viable": true
+      },
+      "R": {
+        "delta_fitness": 1.361,
+        "is_viable": true
+      },
+      "S": {
+        "delta_fitness": 1.711,
+        "is_viable": true
+      },
+      "T": {
+        "delta_fitness": 1.986,
+        "is_viable": true
+      },
+      "V": {
+        "delta_fitness": 1.892,
+        "is_viable": true
+      },
+      "W": {
+        "delta_fitness": 0.581,
+        "is_viable": true
+      },
+      "Y": {
+        "delta_fitness": 1.125,
+        "is_viable": true
+      }
+    }
+  },
+  "N220": {
+    "position": 220,
+    "wt_aa": "N",
+    "is_catalytic_core": false,
+    "viable_mutations_count": 19,
+    "mutations": {
+      "A": {
+        "delta_fitness": 0.657,
+        "is_viable": true
+      },
+      "C": {
+        "delta_fitness": -1.165,
+        "is_viable": true
+      },
+      "D": {
+        "delta_fitness": -0.036,
+        "is_viable": true
+      },
+      "E": {
+        "delta_fitness": -0.104,
+        "is_viable": true
+      },
+      "F": {
+        "delta_fitness": 0.66,
+        "is_viable": true
+      },
+      "G": {
+        "delta_fitness": 0.964,
+        "is_viable": true
+      },
+      "H": {
+        "delta_fitness": -0.561,
+        "is_viable": true
+      },
+      "I": {
+        "delta_fitness": -0.181,
+        "is_viable": true
+      },
+      "K": {
+        "delta_fitness": -0.578,
+        "is_viable": true
+      },
+      "L": {
+        "delta_fitness": 0.371,
+        "is_viable": true
+      },
+      "M": {
+        "delta_fitness": -0.746,
+        "is_viable": true
+      },
+      "P": {
+        "delta_fitness": 0.724,
+        "is_viable": true
+      },
+      "Q": {
+        "delta_fitness": -0.203,
+        "is_viable": true
+      },
+      "R": {
+        "delta_fitness": 0.433,
+        "is_viable": true
+      },
+      "S": {
+        "delta_fitness": 0.511,
+        "is_viable": true
+      },
+      "T": {
+        "delta_fitness": 0.294,
+        "is_viable": true
+      },
+      "V": {
+        "delta_fitness": 0.201,
+        "is_viable": true
+      },
+      "W": {
+        "delta_fitness": -0.492,
+        "is_viable": true
+      },
+      "Y": {
+        "delta_fitness": 0.356,
+        "is_viable": true
+      }
+    }
+  },
+  "H120": {
+    "position": 120,
+    "wt_aa": "H",
+    "is_catalytic_core": true,
+    "viable_mutations_count": 0,
+    "mutations": {
+      "A": {
+        "delta_fitness": -7.695,
+        "is_viable": false
+      },
+      "C": {
+        "delta_fitness": -9.189,
+        "is_viable": false
+      },
+      "D": {
+        "delta_fitness": -7.665,
+        "is_viable": false
+      },
+      "E": {
+        "delta_fitness": -8.463,
+        "is_viable": false
+      },
+      "F": {
+        "delta_fitness": -9.167,
+        "is_viable": false
+      },
+      "G": {
+        "delta_fitness": -7.995,
+        "is_viable": false
+      },
+      "I": {
+        "delta_fitness": -9.438,
+        "is_viable": false
+      },
+      "K": {
+        "delta_fitness": -9.222,
+        "is_viable": false
+      },
+      "L": {
+        "delta_fitness": -8.987,
+        "is_viable": false
+      },
+      "M": {
+        "delta_fitness": -9.382,
+        "is_viable": false
+      },
+      "N": {
+        "delta_fitness": -8.068,
+        "is_viable": false
+      },
+      "P": {
+        "delta_fitness": -8.682,
+        "is_viable": false
+      },
+      "Q": {
+        "delta_fitness": -7.709,
+        "is_viable": false
+      },
+      "R": {
+        "delta_fitness": -8.398,
+        "is_viable": false
+      },
+      "S": {
+        "delta_fitness": -7.633,
+        "is_viable": false
+      },
+      "T": {
+        "delta_fitness": -8.253,
+        "is_viable": false
+      },
+      "V": {
+        "delta_fitness": -8.958,
+        "is_viable": false
+      },
+      "W": {
+        "delta_fitness": -9.574,
+        "is_viable": false
+      },
+      "Y": {
+        "delta_fitness": -8.757,
+        "is_viable": false
+      }
+    }
+  },
+  "H122": {
+    "position": 122,
+    "wt_aa": "H",
+    "is_catalytic_core": true,
+    "viable_mutations_count": 0,
+    "mutations": {
+      "A": {
+        "delta_fitness": -5.952,
+        "is_viable": false
+      },
+      "C": {
+        "delta_fitness": -8.639,
+        "is_viable": false
+      },
+      "D": {
+        "delta_fitness": -2.318,
+        "is_viable": false
+      },
+      "E": {
+        "delta_fitness": -4.684,
+        "is_viable": false
+      },
+      "F": {
+        "delta_fitness": -7.167,
+        "is_viable": false
+      },
+      "G": {
+        "delta_fitness": -5.873,
+        "is_viable": false
+      },
+      "I": {
+        "delta_fitness": -8.002,
+        "is_viable": false
+      },
+      "K": {
+        "delta_fitness": -7.635,
+        "is_viable": false
+      },
+      "L": {
+        "delta_fitness": -7.232,
+        "is_viable": false
+      },
+      "M": {
+        "delta_fitness": -7.643,
+        "is_viable": false
+      },
+      "N": {
+        "delta_fitness": -5.401,
+        "is_viable": false
+      },
+      "P": {
+        "delta_fitness": -6.32,
+        "is_viable": false
+      },
+      "Q": {
+        "delta_fitness": -5.737,
+        "is_viable": false
+      },
+      "R": {
+        "delta_fitness": -6.919,
+        "is_viable": false
+      },
+      "S": {
+        "delta_fitness": -5.823,
+        "is_viable": false
+      },
+      "T": {
+        "delta_fitness": -6.553,
+        "is_viable": false
+      },
+      "V": {
+        "delta_fitness": -7.38,
+        "is_viable": false
+      },
+      "W": {
+        "delta_fitness": -7.511,
+        "is_viable": false
+      },
+      "Y": {
+        "delta_fitness": -6.296,
+        "is_viable": false
+      }
+    }
+  },
+  "D124": {
+    "position": 124,
+    "wt_aa": "D",
+    "is_catalytic_core": true,
+    "viable_mutations_count": 0,
+    "mutations": {
+      "A": {
+        "delta_fitness": -6.816,
+        "is_viable": false
+      },
+      "C": {
+        "delta_fitness": -10.292,
+        "is_viable": false
+      },
+      "E": {
+        "delta_fitness": -5.801,
+        "is_viable": false
+      },
+      "F": {
+        "delta_fitness": -8.292,
+        "is_viable": false
+      },
+      "G": {
+        "delta_fitness": -6.904,
+        "is_viable": false
+      },
+      "H": {
+        "delta_fitness": -7.135,
+        "is_viable": false
+      },
+      "I": {
+        "delta_fitness": -8.389,
+        "is_viable": false
+      },
+      "K": {
+        "delta_fitness": -8.989,
+        "is_viable": false
+      },
+      "L": {
+        "delta_fitness": -8.131,
+        "is_viable": false
+      },
+      "M": {
+        "delta_fitness": -8.948,
+        "is_viable": false
+      },
+      "N": {
+        "delta_fitness": -6.444,
+        "is_viable": false
+      },
+      "P": {
+        "delta_fitness": -8.206,
+        "is_viable": false
+      },
+      "Q": {
+        "delta_fitness": -8.613,
+        "is_viable": false
+      },
+      "R": {
+        "delta_fitness": -7.921,
+        "is_viable": false
+      },
+      "S": {
+        "delta_fitness": -6.993,
+        "is_viable": false
+      },
+      "T": {
+        "delta_fitness": -7.82,
+        "is_viable": false
+      },
+      "V": {
+        "delta_fitness": -7.942,
+        "is_viable": false
+      },
+      "W": {
+        "delta_fitness": -9.58,
+        "is_viable": false
+      },
+      "Y": {
+        "delta_fitness": -8.179,
+        "is_viable": false
+      }
+    }
+  },
+  "H189": {
+    "position": 189,
+    "wt_aa": "H",
+    "is_catalytic_core": true,
+    "viable_mutations_count": 0,
+    "mutations": {
+      "A": {
+        "delta_fitness": -6.531,
+        "is_viable": false
+      },
+      "C": {
+        "delta_fitness": -9.521,
+        "is_viable": false
+      },
+      "D": {
+        "delta_fitness": -5.66,
+        "is_viable": false
+      },
+      "E": {
+        "delta_fitness": -4.433,
+        "is_viable": false
+      },
+      "F": {
+        "delta_fitness": -8.103,
+        "is_viable": false
+      },
+      "G": {
+        "delta_fitness": -6.649,
+        "is_viable": false
+      },
+      "I": {
+        "delta_fitness": -8.141,
+        "is_viable": false
+      },
+      "K": {
+        "delta_fitness": -7.391,
+        "is_viable": false
+      },
+      "L": {
+        "delta_fitness": -7.551,
+        "is_viable": false
+      },
+      "M": {
+        "delta_fitness": -8.401,
+        "is_viable": false
+      },
+      "N": {
+        "delta_fitness": -7.11,
+        "is_viable": false
+      },
+      "P": {
+        "delta_fitness": -6.991,
+        "is_viable": false
+      },
+      "Q": {
+        "delta_fitness": -5.694,
+        "is_viable": false
+      },
+      "R": {
+        "delta_fitness": -7.433,
+        "is_viable": false
+      },
+      "S": {
+        "delta_fitness": -6.413,
+        "is_viable": false
+      },
+      "T": {
+        "delta_fitness": -7.176,
+        "is_viable": false
+      },
+      "V": {
+        "delta_fitness": -7.326,
+        "is_viable": false
+      },
+      "W": {
+        "delta_fitness": -8.59,
+        "is_viable": false
+      },
+      "Y": {
+        "delta_fitness": -7.846,
+        "is_viable": false
+      }
+    }
+  },
+  "C208": {
+    "position": 208,
+    "wt_aa": "C",
+    "is_catalytic_core": true,
+    "viable_mutations_count": 19,
+    "mutations": {
+      "A": {
+        "delta_fitness": 1.253,
+        "is_viable": true
+      },
+      "D": {
+        "delta_fitness": 5.708,
+        "is_viable": true
+      },
+      "E": {
+        "delta_fitness": 0.355,
+        "is_viable": true
+      },
+      "F": {
+        "delta_fitness": 0.628,
+        "is_viable": true
+      },
+      "G": {
+        "delta_fitness": 0.887,
+        "is_viable": true
+      },
+      "H": {
+        "delta_fitness": 0.662,
+        "is_viable": true
+      },
+      "I": {
+        "delta_fitness": 0.65,
+        "is_viable": true
+      },
+      "K": {
+        "delta_fitness": -1.267,
+        "is_viable": true
+      },
+      "L": {
+        "delta_fitness": 0.984,
+        "is_viable": true
+      },
+      "M": {
+        "delta_fitness": -0.149,
+        "is_viable": true
+      },
+      "N": {
+        "delta_fitness": 1.442,
+        "is_viable": true
+      },
+      "P": {
+        "delta_fitness": -0.989,
+        "is_viable": true
+      },
+      "Q": {
+        "delta_fitness": -0.33,
+        "is_viable": true
+      },
+      "R": {
+        "delta_fitness": -0.114,
+        "is_viable": true
+      },
+      "S": {
+        "delta_fitness": 1.045,
+        "is_viable": true
+      },
+      "T": {
+        "delta_fitness": -0.092,
+        "is_viable": true
+      },
+      "V": {
+        "delta_fitness": 0.686,
+        "is_viable": true
+      },
+      "W": {
+        "delta_fitness": -0.902,
+        "is_viable": true
+      },
+      "Y": {
+        "delta_fitness": 0.04,
+        "is_viable": true
+      }
+    }
+  },
+  "H250": {
+    "position": 250,
+    "wt_aa": "H",
+    "is_catalytic_core": true,
+    "viable_mutations_count": 0,
+    "mutations": {
+      "A": {
+        "delta_fitness": -4.979,
+        "is_viable": false
+      },
+      "C": {
+        "delta_fitness": -6.23,
+        "is_viable": false
+      },
+      "D": {
+        "delta_fitness": -5.205,
+        "is_viable": false
+      },
+      "E": {
+        "delta_fitness": -5.751,
+        "is_viable": false
+      },
+      "F": {
+        "delta_fitness": -4.919,
+        "is_viable": false
+      },
+      "G": {
+        "delta_fitness": -4.042,
+        "is_viable": false
+      },
+      "I": {
+        "delta_fitness": -6.112,
+        "is_viable": false
+      },
+      "K": {
+        "delta_fitness": -6.878,
+        "is_viable": false
+      },
+      "L": {
+        "delta_fitness": -5.343,
+        "is_viable": false
+      },
+      "M": {
+        "delta_fitness": -6.468,
+        "is_viable": false
+      },
+      "N": {
+        "delta_fitness": -5.005,
+        "is_viable": false
+      },
+      "P": {
+        "delta_fitness": -6.018,
+        "is_viable": false
+      },
+      "Q": {
+        "delta_fitness": -5.632,
+        "is_viable": false
+      },
+      "R": {
+        "delta_fitness": -5.814,
+        "is_viable": false
+      },
+      "S": {
+        "delta_fitness": -5.145,
+        "is_viable": false
+      },
+      "T": {
+        "delta_fitness": -5.715,
+        "is_viable": false
+      },
+      "V": {
+        "delta_fitness": -5.808,
+        "is_viable": false
+      },
+      "W": {
+        "delta_fitness": -6.249,
+        "is_viable": false
+      },
+      "Y": {
+        "delta_fitness": -4.863,
+        "is_viable": false
+      }
+    }
+  }
+}

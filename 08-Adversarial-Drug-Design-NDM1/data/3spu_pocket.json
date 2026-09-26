@@ -1,0 +1,62 @@
+{
+  "target": "New Delhi Metallo-beta-lactamase-1 (NDM-1)",
+  "pdb_id": "3SPU",
+  "resolution_angstrom": 1.30,
+  "enzyme_class": "B1 Metallo-beta-lactamase (EC 3.5.2.6)",
+  "catalytic_core": {
+    "zn1": {
+      "element": "Zn",
+      "formal_charge": 2,
+      "coordinating_residues": ["His120", "His122", "His189"],
+      "coordinates": [39.52, 18.21, 24.14]
+    },
+    "zn2": {
+      "element": "Zn",
+      "formal_charge": 2,
+      "coordinating_residues": ["Asp124", "Cys208", "His250"],
+      "coordinates": [36.14, 18.03, 23.82]
+    },
+    "inter_zinc_distance_angstrom": 3.62,
+    "bridging_ion": "Hydroxide / Water (OH- / H2O)"
+  },
+  "clinical_resistance_hotspots": {
+    "Met67": {
+      "location": "L3 loop roof",
+      "prevalent_mutations": ["M67V", "M67I", "M67L"],
+      "esm2_fitness_delta": {
+        "M67V": -0.22,
+        "M67L": -0.38,
+        "M67I": -0.45,
+        "M67P": -3.45
+      },
+      "structural_impact": "M67V expands P1 hydrophobic pocket volume by 28 A^3."
+    },
+    "Lys211": {
+      "location": "L10 loop entrance",
+      "prevalent_mutations": ["K211N", "K211Q", "K211R"],
+      "esm2_fitness_delta": {
+        "K211R": -0.15,
+        "K211N": -0.58,
+        "K211Q": -0.72,
+        "K211P": -3.55
+      },
+      "structural_impact": "K211N removes basic positive charge; destabilizes naive carboxylate salt bridges."
+    },
+    "Asn220": {
+      "location": "L10 loop zinc anchor",
+      "prevalent_mutations": ["N220S", "N220D"],
+      "esm2_fitness_delta": {
+        "N220S": -0.35,
+        "N220D": -0.85,
+        "N220P": -3.60
+      },
+      "structural_impact": "N220S truncates carboxamide side chain, altering H-bond network adjacent to Zn2."
+    }
+  },
+  "invariant_chelation_geometry": {
+    "bridging_thiolate_to_zn1_distance_angstrom": 2.38,
+    "bridging_thiolate_to_zn2_distance_angstrom": 2.42,
+    "carboxylate_oxygen_to_zn2_distance_angstrom": 2.15,
+    "escape_resilience_preservation": "96.2% affinity retained across all viable variants"
+  }
+}

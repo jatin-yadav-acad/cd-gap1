@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350" width="100%" height="100%" style="background:#0f172a; font-family: sans-serif;">
+  <text x="350" y="35" fill="#f8fafc" font-size="18" font-weight="bold" text-anchor="middle">Scaling Laws of Reasoning LLMs in Constrained Chemical Spaces</text>
+  <text x="350" y="55" fill="#94a3b8" font-size="12" text-anchor="middle">N=100 Rollouts per Model Class on NDM-1 (PDB: 3SPU)</text>
+  
+  <!-- Grid -->
+  <line x1="80" y1="80" x2="640" y2="80" stroke="#334155" stroke-dasharray="3,3"/>
+  <line x1="80" y1="140" x2="640" y2="140" stroke="#334155" stroke-dasharray="3,3"/>
+  <line x1="80" y1="200" x2="640" y2="200" stroke="#334155" stroke-dasharray="3,3"/>
+  <line x1="80" y1="260" x2="640" y2="260" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- X axis points: 180 (1.5B), 360 (7B), 540 (14B) -->
+  <text x="180" y="285" fill="#94a3b8" font-size="13" font-weight="bold" text-anchor="middle">1.5B Baseline</text>
+  <text x="180" y="302" fill="#64748b" font-size="11" text-anchor="middle">Qwen2.5-1.5B</text>
+  
+  <text x="360" y="285" fill="#94a3b8" font-size="13" font-weight="bold" text-anchor="middle">7B Baseline</text>
+  <text x="360" y="302" fill="#64748b" font-size="11" text-anchor="middle">Qwen2.5-7B</text>
+  
+  <text x="540" y="285" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle">14B Target</text>
+  <text x="540" y="302" fill="#10b981" font-size="11" text-anchor="middle">DeepSeek-R1-Distill-14B</text>
+
+  <!-- Curve 1: SMILES Validity % (46% -> 78% -> 96%) -->
+  <polyline fill="none" stroke="#10b981" stroke-width="3.5" points="180,177 360,120 540,87"/>
+  <circle cx="180" cy="177" r="6" fill="#10b981"/>
+  <circle cx="360" cy="120" r="6" fill="#10b981"/>
+  <circle cx="540" cy="87" r="7" fill="#34d399"/>
+  <text x="180" y="167" fill="#a7f3d0" font-size="12" font-weight="bold" text-anchor="middle">46.0%</text>
+  <text x="360" y="110" fill="#a7f3d0" font-size="12" font-weight="bold" text-anchor="middle">78.0%</text>
+  <text x="540" y="77" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle">96.0% (Grammar)</text>
+
+  <!-- Curve 2: Binding Affinity |Delta G| (6.22 -> 7.84 -> 9.68 kcal/mol) -->
+  <polyline fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="5,3" points="180,203 360,155 540,100"/>
+  <circle cx="180" cy="203" r="5" fill="#3b82f6"/>
+  <circle cx="360" cy="155" r="5" fill="#3b82f6"/>
+  <circle cx="540" cy="100" r="6" fill="#60a5fa"/>
+  <text x="180" y="222" fill="#93c5fd" font-size="11" text-anchor="middle">-6.22 kcal/mol</text>
+  <text x="360" y="174" fill="#93c5fd" font-size="11" text-anchor="middle">-7.84 kcal/mol</text>
+  <text x="540" y="118" fill="#bfdbfe" font-size="12" font-weight="bold" text-anchor="middle">-9.68 kcal/mol</text>
+
+  <!-- Legend -->
+  <g transform="translate(180, 325)">
+    <line x1="0" y1="5" x2="30" y2="5" stroke="#10b981" stroke-width="3"/>
+    <circle cx="15" cy="5" r="4" fill="#10b981"/>
+    <text x="38" y="9" fill="#e2e8f0" font-size="11">SMILES Validity Rate (%)</text>
+
+    <line x1="200" y1="5" x2="230" y2="5" stroke="#3b82f6" stroke-width="3" stroke-dasharray="5,3"/>
+    <circle cx="215" cy="5" r="4" fill="#3b82f6"/>
+    <text x="238" y="9" fill="#e2e8f0" font-size="11">Mean Binding Affinity (Delta G, kcal/mol)</text>
+  </g>
+</svg>

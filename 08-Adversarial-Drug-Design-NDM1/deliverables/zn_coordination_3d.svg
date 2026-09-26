@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350" width="100%" height="100%" style="background:#0b0f19; font-family: sans-serif;">
+  <text x="350" y="30" fill="#f8fafc" font-size="16" font-weight="bold" text-anchor="middle">3D Catalytic Coordination Proof &amp; Green Retrosynthesis (SDG 12)</text>
+  
+  <!-- Left Panel: 3D Coordination Architecture -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="320" height="270" rx="8" fill="#111827" stroke="#334155"/>
+    <text x="160" y="25" fill="#fde047" font-size="12" font-weight="bold" text-anchor="middle">NDM-1 Binuclear Zinc Active Site (PDB: 3SPU)</text>
+
+    <!-- Zn1 Sphere -->
+    <circle cx="100" cy="120" r="22" fill="#2563eb" stroke="#93c5fd" stroke-width="2"/>
+    <text x="100" y="125" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">Zn1</text>
+    <text x="100" y="75" fill="#94a3b8" font-size="9" text-anchor="middle">His120, His122, His189</text>
+    <line x1="100" y1="82" x2="100" y2="98" stroke="#64748b" stroke-width="1.5"/>
+
+    <!-- Zn2 Sphere -->
+    <circle cx="220" cy="120" r="22" fill="#2563eb" stroke="#93c5fd" stroke-width="2"/>
+    <text x="220" y="125" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">Zn2</text>
+    <text x="220" y="75" fill="#94a3b8" font-size="9" text-anchor="middle">Asp124, Cys208, His250</text>
+    <line x1="220" y1="82" x2="220" y2="98" stroke="#64748b" stroke-width="1.5"/>
+
+    <!-- Inter-zinc distance -->
+    <line x1="122" y1="120" x2="198" y2="120" stroke="#475569" stroke-dasharray="3,3"/>
+    <text x="160" y="112" fill="#cbd5e1" font-size="9" text-anchor="middle">3.62 A</text>
+
+    <!-- Bridging Thiolate S from Ligand -->
+    <circle cx="160" cy="165" r="16" fill="#eab308" stroke="#fef08a" stroke-width="2"/>
+    <text x="160" y="170" fill="#000000" font-size="11" font-weight="bold" text-anchor="middle">S-</text>
+
+    <!-- Bonds from S- to Zn1 and Zn2 -->
+    <line x1="116" y1="135" x2="147" y2="155" stroke="#facc15" stroke-width="2.5"/>
+    <text x="120" y="155" fill="#fde047" font-size="8">2.38 A</text>
+
+    <line x1="204" y1="135" x2="173" y2="155" stroke="#facc15" stroke-width="2.5"/>
+    <text x="200" y="155" fill="#fde047" font-size="8">2.42 A</text>
+
+    <!-- Ligand Carboxylate Arm coordinating Zn2 -->
+    <rect x="200" y="175" width="50" height="24" rx="4" fill="#065f46" stroke="#34d399"/>
+    <text x="225" y="191" fill="#a7f3d0" font-size="10" font-weight="bold" text-anchor="middle">-COO-</text>
+    <line x1="220" y1="142" x2="220" y2="175" stroke="#34d399" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="235" y="162" fill="#6ee7b7" font-size="8">2.15 A</text>
+
+    <!-- P1-Benzyl Group in M67V pocket -->
+    <rect x="70" y="210" width="80" height="24" rx="4" fill="#1e1b4b" stroke="#818cf8"/>
+    <text x="110" y="226" fill="#c7d2fe" font-size="9" font-weight="bold" text-anchor="middle">P1-Benzyl (M67V)</text>
+
+    <text x="160" y="255" fill="#34d399" font-size="10" font-weight="bold" text-anchor="middle">Invariant Bis-Zinc Chelation Core</text>
+  </g>
+
+  <!-- Right Panel: 3-Step Green Synthesis -->
+  <g transform="translate(360, 50)">
+    <rect x="0" y="0" width="320" height="270" rx="8" fill="#111827" stroke="#334155"/>
+    <text x="160" y="25" fill="#34d399" font-size="12" font-weight="bold" text-anchor="middle">3-Step Green Synthesis (USPTO-50k)</text>
+
+    <!-- Step 1 -->
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="290" height="50" rx="5" fill="#1e293b"/>
+      <text x="10" y="18" fill="#ffffff" font-size="10" font-weight="bold">Step 1: L-Cysteine + Benzaldehyde</text>
+      <text x="10" y="32" fill="#94a3b8" font-size="8">Solvent: Bio-EtOH / H2O (1:1), 25C | Condensation</text>
+      <text x="230" y="25" fill="#34d399" font-size="10" font-weight="bold">91% Yield</text>
+    </g>
+
+    <!-- Step 2 -->
+    <g transform="translate(15, 105)">
+      <rect x="0" y="0" width="290" height="50" rx="5" fill="#1e293b"/>
+      <text x="10" y="18" fill="#ffffff" font-size="10" font-weight="bold">Step 2: N-Acylation w/ Anhydride</text>
+      <text x="10" y="32" fill="#94a3b8" font-size="8">Solvent: Water / 2-MeTHF (Bio-ether) | Atom Econ: 86%</text>
+      <text x="230" y="25" fill="#34d399" font-size="10" font-weight="bold">88.5% Yield</text>
+    </g>
+
+    <!-- Step 3 -->
+    <g transform="translate(15, 165)">
+      <rect x="0" y="0" width="290" height="50" rx="5" fill="#1e293b"/>
+      <text x="10" y="18" fill="#ffffff" font-size="10" font-weight="bold">Step 3: Selective Thiol Deprotection</text>
+      <text x="10" y="32" fill="#94a3b8" font-size="8">Solvent: Pure Degassed H2O (pH 8.5) | Atom Econ: 89%</text>
+      <text x="230" y="25" fill="#34d399" font-size="10" font-weight="bold">94% Yield</text>
+    </g>
+
+    <!-- Metrics Footer -->
+    <g transform="translate(15, 225)">
+      <rect x="0" y="0" width="290" height="32" rx="5" fill="#064e3b" stroke="#059669"/>
+      <text x="145" y="14" fill="#a7f3d0" font-size="9" font-weight="bold" text-anchor="middle">Cumulative Yield: 75.7% | E-Factor: 8.5 (&lt; 25)</text>
+      <text x="145" y="25" fill="#6ee7b7" font-size="8" text-anchor="middle">Zero Chlorinated Solvents (0 DCM) | SDG 12 Compliant</text>
+    </g>
+  </g>
+</svg>

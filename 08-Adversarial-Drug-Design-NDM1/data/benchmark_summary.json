@@ -1,0 +1,38 @@
+{
+  "1.5B": {
+    "model_tier": "1.5B",
+    "rollouts_conducted": 100,
+    "smiles_validity_pct": 46.7,
+    "mean_binding_delta_g": -5.37,
+    "std_binding_delta_g": 0.13,
+    "mean_sascore": 3.77,
+    "std_sascore": 0.76,
+    "retrosynthetic_steps": 7.0,
+    "escape_resilience_loss_pct": 43.5,
+    "nash_equilibrium_rate_pct": 0.0
+  },
+  "7B": {
+    "model_tier": "7B",
+    "rollouts_conducted": 100,
+    "smiles_validity_pct": 77.2,
+    "mean_binding_delta_g": -8.9,
+    "std_binding_delta_g": 0.38,
+    "mean_sascore": 2.75,
+    "std_sascore": 0.21,
+    "retrosynthetic_steps": 5.0,
+    "escape_resilience_loss_pct": 20.8,
+    "nash_equilibrium_rate_pct": 0.0
+  },
+  "14B": {
+    "model_tier": "14B",
+    "rollouts_conducted": 100,
+    "smiles_validity_pct": 97.1,
+    "mean_binding_delta_g": -9.31,
+    "std_binding_delta_g": 1.06,
+    "mean_sascore": 2.55,
+    "std_sascore": 0.25,
+    "retrosynthetic_steps": 3.5,
+    "escape_resilience_loss_pct": 14.1,
+    "nash_equilibrium_rate_pct": 45.0
+  }
+}

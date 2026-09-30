@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proactive Game-Theoretic Drug Design on Metallo-β-Lactamase NDM-1 (PDB: 3SPU) - A3 Poster</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* ==================== EXACT A3 DIMENSIONS & PRINT SETTINGS ==================== */
+    @page {
+      size: 420mm 297mm; /* Exact Standard ISO A3 Landscape */
+      margin: 0;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    @media screen {
+      body {
+        padding: 18px;
+        display: flex;
+        justify-content: center;
+        background-color: #0b0f19;
+      }
+      .poster-a3-frame {
+        width: 420mm;
+        height: 297mm;
+        max-width: 420mm;
+        max-height: 297mm;
+        background-color: #ffffff;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        border: 1px solid #cbd5e1;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .poster-a3-frame {
+        width: 420mm !important;
+        height: 297mm !important;
+        max-width: 420mm !important;
+        max-height: 297mm !important;
+        border: none !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+      }
+    }
+
+    /* ==================== TYPOGRAPHY FOR NORMAL EYES ==================== */
+    .font-serif-academic {
+      font-family: 'STIX Two Text', 'Georgia', 'Times New Roman', serif;
+    }
+    .academic-card {
+      background-color: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 10px 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .section-title {
+      font-family: 'STIX Two Text', 'Georgia', serif;
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #0f172a;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .booktabs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      line-height: 1.35;
+    }
+    .booktabs-table th {
+      border-top: 2px solid #0f172a;
+      border-bottom: 1.5px solid #0f172a;
+      padding: 5px 6px;
+      text-align: left;
+      font-weight: 800;
+      color: #0f172a;
+      background-color: #f1f5f9;
+    }
+    .booktabs-table td {
+      padding: 4.5px 6px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #1e293b;
+    }
+    .booktabs-table tr:last-child td {
+      border-bottom: 2.5px solid #0f172a;
+      font-weight: 800;
+      background-color: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- EXACT A3 LANDSCAPE CANVAS: 420mm x 297mm -->
+<div class="poster-a3-frame p-[10mm] flex flex-col justify-between text-slate-900">
+
+  <!-- ==================== CLEAN ACADEMIC HEADER ==================== -->
+  <header class="border-b-[2.5px] border-slate-950 pb-2 mb-2.5 flex-shrink-0">
+    <!-- Paper Title & Open-Science QR Code Box -->
+    <div class="flex justify-between items-center gap-4">
+      <div class="flex-1">
+        <h1 class="font-serif-academic text-[27px] font-black text-slate-950 leading-tight tracking-tight">
+          Proactive Game-Theoretic Drug Design Anticipates Evolutionary Escape in Metallo-β-Lactamase NDM-1
+        </h1>
+        <h2 class="text-[13px] font-medium text-slate-700 mt-1">
+          Adversarial Monte Carlo Tree Search Pitted Against ESM-2 Deep Mutational Scanning Drives Molecular Convergence to an Invariant Catalytic Nash Equilibrium
+        </h2>
+      </div>
+
+      <!-- Prominent Anonymous Code Repository Box with Scannable QR Code -->
+      <div class="flex items-center gap-2.5 bg-slate-50 border-2 border-slate-900 rounded p-1.5 flex-shrink-0 shadow-xs">
+        <div class="w-14 h-14 bg-white border border-slate-300 rounded flex items-center justify-center p-0.5">
+          <img src="qrcode_code_repo.png" alt="Code Repository QR Code" class="w-full h-full object-contain">
+        </div>
+        <div class="text-[10px] font-mono leading-tight space-y-0.5">
+          <div class="font-bold text-slate-950 text-[11px] font-sans flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            Open Science Code:
+          </div>
+          <a href="https://anonymous.4open.science/r/cd-gap1-DE6F" target="_blank" class="text-blue-700 font-bold underline hover:text-blue-900 block max-w-[210px] truncate">
+            anonymous.4open.science/r/cd-gap1-DE6F
+          </a>
+          <div class="text-slate-500 text-[9px]">Scan QR for PyTorch models &amp; datasets</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Authors & Department Info -->
+    <div class="flex justify-between items-center text-[12px] text-slate-800 pt-2 mt-1.5 border-t border-slate-200">
+      <div class="flex items-baseline gap-3">
+        <span class="font-black text-slate-950 text-[14.5px] tracking-wide">Himanshi<sup>*</sup>, Kanchi</span>
+        <span class="text-slate-600 font-semibold text-[12.5px]">Department of Bioscience and Biotechnology</span>
+      </div>
+      <div class="font-mono text-[11px] text-slate-700">
+        Target: <strong>NDM-1 (PDB: 3SPU)</strong> | Zn₁⋯Zn₂ Dist: <strong>3.84 Å</strong> | Lead: <strong>Tridentate Bis-Zinc Clamp</strong> (MW: 369.46 Da)
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN 4 QUADRANTS (145mm vertical budget) ==================== -->
+  <main class="grid grid-cols-2 gap-3.5 flex-1 min-h-0">
+
+    <!-- ========== QUADRANT 1: THE PROBLEM & GAME FORMULATION ========== -->
+    <section class="academic-card">
+      <div>
+        <div class="section-title">
+          <span>1. Biological Premise &amp; Minimax Game Formulation</span>
+          <span class="text-[10.5px] font-mono font-semibold text-slate-500">SDG 3 TARGET</span>
+        </div>
+
+        <div class="text-[11.5px] leading-relaxed text-slate-800 space-y-1.5">
+          <p>
+            <strong>The Clinical Crisis:</strong> Metallo-β-lactamase <strong class="text-slate-950">NDM-1 (PDB: 3SPU)</strong> hydrolyzes carbapenems ("antibiotics of last resort"). Traditional virtual screening on static crystal structures yields leads that rapidly fail against single-point active-site loop mutations (<strong class="font-mono text-red-700">Met67</strong> on L3 loop; <strong class="font-mono text-red-700">Lys211</strong>, <strong class="font-mono text-red-700">Asn220</strong> on L10 loop).
+          </p>
+
+          <!-- Mathematical Minimax Formulation Box -->
+          <div class="bg-white border border-slate-300 rounded p-2 shadow-xs">
+            <div class="font-bold text-slate-950 text-[11px] border-b border-slate-200 pb-0.5 flex justify-between">
+              <span>Two-Player Zero-Sum Game Formulation</span>
+              <span class="font-mono text-[9.5px] text-slate-500">Minimax Optimization</span>
+            </div>
+            <div class="text-center py-0.5 font-serif text-[12.5px] font-bold text-slate-950 bg-slate-50 border border-slate-200 rounded my-1">
+              <em>V*(S<sub>t</sub>)</em> = 
+              <span class="font-sans font-bold text-[11px] text-slate-800">max</span><sub>Chemist (W)</sub> 
+              <span class="font-sans font-bold text-[11px] text-slate-800">min</span><sub>Pathogen (B)</sub> 
+              <em>E</em> [ <em>R</em>(<em>S</em><sub>terminal</sub>) ]
+            </div>
+            <div class="grid grid-cols-2 gap-2 text-[10.5px] text-slate-700">
+              <div>
+                <strong class="text-slate-950">Pathogen Agent (Black):</strong>
+                <div class="text-slate-600 mt-0.5">
+                  ESM-2 (650M) evaluates non-synonymous mutations:
+                  <div class="font-mono text-[9.5px] text-slate-900 bg-slate-100 p-0.5 rounded mt-0.5">ΔFitness = log P(mut) - log P(wt) &gt; -1.5</div>
+                  Prunes lethal mutations that disrupt the fold.
+                </div>
+              </div>
+              <div>
+                <strong class="text-slate-950">Chemist Agent (White):</strong>
+                <div class="text-slate-600 mt-0.5">
+                  14B Reasoning Policy within MCTS-UCT maximizes:
+                  <div class="font-mono text-[9.5px] text-slate-900 bg-slate-100 p-0.5 rounded mt-0.5">R = -w₁(ΔG) + w₂(QED) - w₃(SAScore) + R<sub>Zn</sub></div>
+                  w₁=1.0, w₂=2.5, w₃=0.5, R<sub>Zn</sub>=+3.5 bonus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-amber-50/80 border border-amber-300 rounded p-1.5 text-[10.5px] text-amber-950 mt-1">
+        <strong>The Biological Checkmate:</strong> While loop perimeters mutate freely, the catalytic zinc coordination shell (His120, His122, Asp124, His189, Cys208, His250) has <strong>0% mutational viability</strong>. Bridging this shell creates an inescapable evolutionary trap.
+      </div>
+    </section>
+
+    <!-- ========== QUADRANT 2: SCALING LAWS & QUANTITATIVE BENCHMARKS ========== -->
+    <section class="academic-card">
+      <div>
+        <div class="section-title">
+          <span>2. Empirical Scaling Laws Across 300 Search Rollouts</span>
+          <span class="text-[10.5px] font-mono font-semibold text-slate-500">n = 100 PER TIER</span>
+        </div>
+
+        <p class="text-[11px] text-slate-700 mb-1 leading-snug">
+          Multi-tier experimental rollouts comparing greedy baseline search against 14B Monte Carlo Tree Search with Upper Confidence Bounds (MCTS-UCT, <em>c</em> = √2):
+        </p>
+
+        <!-- Formal Booktabs Benchmark Table -->
+        <table class="booktabs-table">
+          <thead>
+            <tr>
+              <th>Model Parameter Class</th>
+              <th>Search Policy</th>
+              <th>Valid SMILES (%)</th>
+              <th>Binding ΔG (kcal/mol)</th>
+              <th>SAScore</th>
+              <th>Synthetic Steps</th>
+              <th>Escape Resilience Loss</th>
+              <th>Nash Rate (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-semibold">Qwen2.5-1.5B-Instruct</td>
+              <td>Greedy Local</td>
+              <td>46.0%</td>
+              <td>-6.22 ± 0.84</td>
+              <td>3.77 ± 0.76</td>
+              <td>7.0 ± 1.2</td>
+              <td class="text-red-700 font-bold">43.5% (Collapse)</td>
+              <td>0.0%</td>
+            </tr>
+            <tr>
+              <td class="font-semibold">Qwen2.5-7B-Instruct</td>
+              <td>Greedy Local</td>
+              <td>78.0%</td>
+              <td>-7.84 ± 0.42</td>
+              <td>2.75 ± 0.21</td>
+              <td>5.0 ± 0.8</td>
+              <td>20.8%</td>
+              <td>0.0%</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-950">DeepSeek-R1-14B</td>
+              <td class="font-bold text-slate-950">MCTS-UCT</td>
+              <td class="font-bold text-emerald-800">96.0%</td>
+              <td class="font-bold text-emerald-800">-9.68 ± 0.31</td>
+              <td class="font-bold text-emerald-800">2.55 ± 0.25</td>
+              <td class="font-bold text-emerald-800">3.5 ± 0.5</td>
+              <td class="font-bold text-emerald-800">&lt; 3.8% (Resilient)</td>
+              <td class="font-bold text-emerald-800">45.0%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-[9.5px] text-slate-500 italic mt-0.5">
+          Table 1 | Statistical metrics across n=100 rollouts per model. Values: mean ± s.d. P-value &lt; 10⁻⁴ (two-tailed Welch's t-test).
+        </div>
+      </div>
+
+      <!-- Key Findings Strip -->
+      <div class="grid grid-cols-3 gap-2 mt-1 pt-1 border-t border-slate-200 text-center font-mono text-[10px]">
+        <div class="bg-white border border-slate-300 p-1 rounded">
+          <div class="text-slate-500">Syntactic Jump</div>
+          <div class="font-bold text-emerald-800 text-[11px]">46% → 96%</div>
+        </div>
+        <div class="bg-white border border-slate-300 p-1 rounded">
+          <div class="text-slate-500">MCTS Entropy</div>
+          <div class="font-bold text-slate-950 text-[11px]">1.01 → 0.45 nats</div>
+        </div>
+        <div class="bg-white border border-slate-300 p-1 rounded">
+          <div class="text-slate-500">Affinity Retention</div>
+          <div class="font-bold text-emerald-800 text-[11px]">96.2% Across Variants</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== QUADRANT 3: EVOLUTIONARY ANTICIPATION & MCTS TREE ========== -->
+    <section class="academic-card">
+      <div>
+        <div class="section-title">
+          <span>3. Evolutionary Game Tree &amp; Counter-Intuitive Search</span>
+          <span class="text-[10.5px] font-mono font-semibold text-slate-500">MINIMAX PLIES</span>
+        </div>
+
+        <p class="text-[11px] text-slate-700 mb-1 leading-snug">
+          When Pathogen executes clinical resistance mutation <strong class="font-mono text-red-700">M67V</strong> (NDM-4/5/7; ΔFitness = -0.22), greedy search collapses. 14B MCTS anticipates cavity expansion:
+        </p>
+
+        <!-- High-Contrast Vector SVG Game Tree -->
+        <div class="bg-white border border-slate-300 rounded p-1.5">
+          <svg viewBox="0 0 540 160" class="w-full h-36">
+            <!-- Root -->
+            <g transform="translate(270, 18)">
+              <rect x="-85" y="-12" width="170" height="24" rx="3" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+              <text x="0" y="3.5" fill="#0f172a" font-size="9.5" font-family="monospace" font-weight="bold" text-anchor="middle">Root S₀: WT (3SPU) + Captopril</text>
+            </g>
+
+            <!-- Lines -->
+            <line x1="225" y1="30" x2="135" y2="58" stroke="#b91c1c" stroke-width="1.5"/>
+            <line x1="270" y1="30" x2="270" y2="58" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="315" y1="30" x2="405" y2="58" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+
+            <!-- Pathogen Moves -->
+            <g transform="translate(135, 68)">
+              <rect x="-75" y="-10" width="150" height="20" rx="3" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+              <text x="0" y="3" fill="#991b1b" font-size="8.5" font-weight="bold" text-anchor="middle">Pathogen: M67V (ΔFit = -0.22)</text>
+            </g>
+            <g transform="translate(270, 68)">
+              <rect x="-50" y="-9" width="100" height="18" rx="2" fill="#f1f5f9" stroke="#64748b"/>
+              <text x="0" y="3" fill="#475569" font-size="8" text-anchor="middle">K211R (Neutral)</text>
+            </g>
+            <g transform="translate(405, 68)">
+              <rect x="-60" y="-9" width="120" height="18" rx="2" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="3,3"/>
+              <text x="0" y="3" fill="#64748b" font-size="8" text-anchor="middle">M67P (Pruned: Lethal)</text>
+            </g>
+
+            <!-- Lines to Chemist -->
+            <line x1="105" y1="78" x2="70" y2="108" stroke="#d97706" stroke-width="1.2"/>
+            <line x1="165" y1="78" x2="200" y2="108" stroke="#15803d" stroke-width="2"/>
+
+            <!-- Chemist Moves -->
+            <g transform="translate(70, 120)">
+              <rect x="-55" y="-12" width="110" height="24" rx="2" fill="#fffbeb" stroke="#d97706" stroke-width="1.2"/>
+              <text x="0" y="-2" fill="#92400e" font-size="8" font-weight="bold" text-anchor="middle">1.5B Greedy Move</text>
+              <text x="0" y="8" fill="#b91c1c" font-size="7.5" font-family="monospace" text-anchor="middle">ΔG = -5.8 | -43.5% Loss</text>
+            </g>
+            <g transform="translate(200, 120)">
+              <rect x="-75" y="-12" width="150" height="24" rx="2" fill="#f0fdf4" stroke="#15803d" stroke-width="1.8"/>
+              <text x="0" y="-2" fill="#166534" font-size="8" font-weight="bold" text-anchor="middle">14B MCTS Proactive Move</text>
+              <text x="0" y="8" fill="#15803d" font-size="7.5" font-family="monospace" text-anchor="middle">P1-Benzyl Arm | ΔG = -9.68</text>
+            </g>
+
+            <!-- Nash Box -->
+            <g transform="translate(400, 120)">
+              <rect x="-80" y="-12" width="160" height="24" rx="2" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+              <text x="0" y="-2" fill="#0f172a" font-size="8" font-weight="bold" text-anchor="middle">Terminal Nash Equilibrium</text>
+              <text x="0" y="8" fill="#0f172a" font-size="7.5" font-family="monospace" text-anchor="middle">Invariant Zinc Clamp (&lt;3.8% Loss)</text>
+            </g>
+            <line x1="275" y1="120" x2="320" y2="120" stroke="#0f172a" stroke-width="1.5" stroke-dasharray="2,2"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="text-[10.5px] text-slate-700 bg-slate-100 p-1.5 rounded mt-1">
+        <strong>Mechanistic Insight:</strong> M67V expands the P1 pocket volume by <strong>28 Å³</strong>. While greedy search suffers affinity loss, 14B Chain-of-Thought reasoning deploys a planar P1-benzyl group to pack the void and rigidify the bis-zinc clamp.
+      </div>
+    </section>
+
+    <!-- ========== QUADRANT 4: BIOPHYSICAL PROOF & GREEN RETRO (SDG 12) ========== -->
+    <section class="academic-card">
+      <div>
+        <div class="section-title">
+          <span>4. Invariant Catalytic Chelation &amp; Green Retrosynthesis</span>
+          <span class="text-[10.5px] font-mono font-semibold text-slate-500">SDG 12 GREEN CHEM</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 text-[10.5px] font-mono">
+          <!-- Biophysical Proof -->
+          <div class="bg-white border border-slate-300 rounded p-2 space-y-1">
+            <div class="font-bold text-slate-950 font-sans border-b border-slate-200 pb-0.5 text-[11px]">
+              Biophysical Chelation
+            </div>
+            <div class="flex justify-between"><span>Inter-Zinc Dist:</span><strong class="text-slate-950">3.84 Å</strong></div>
+            <div class="flex justify-between"><span>Zn₁ ⋯ Thiolate (S):</span><strong class="text-emerald-800">2.38 Å</strong></div>
+            <div class="flex justify-between"><span>Zn₂ ⋯ Carboxylate:</span><strong class="text-emerald-800">2.42 Å</strong></div>
+            <div class="flex justify-between"><span>MMFF94 Energy:</span><strong>14.14 kcal/mol</strong></div>
+            <div class="flex justify-between"><span>Lipinski Ro5:</span><strong class="text-emerald-800">0 Violations</strong></div>
+            <div class="flex justify-between"><span>QED Drug-Score:</span><strong>0.632</strong></div>
+          </div>
+
+          <!-- Green Metrics -->
+          <div class="bg-white border border-slate-300 rounded p-2 space-y-1">
+            <div class="font-bold text-slate-950 font-sans border-b border-slate-200 pb-0.5 text-[11px]">
+              Green Process Ecology
+            </div>
+            <div class="flex justify-between"><span>Route Length:</span><strong class="text-slate-950">3 Linear Steps</strong></div>
+            <div class="flex justify-between"><span>Cumulative Yield:</span><strong class="text-emerald-800 font-bold">75.7%</strong></div>
+            <div class="flex justify-between"><span>Mean Atom Economy:</span><strong class="text-emerald-800 font-bold">89.2%</strong></div>
+            <div class="flex justify-between"><span>Process E-Factor:</span><strong class="text-emerald-800 font-bold">8.5 kg/kg</strong></div>
+            <div class="flex justify-between"><span>Pharma Avg E-Factor:</span><span class="text-slate-500">25–100 kg/kg</span></div>
+            <div class="flex justify-between"><span>Chlorinated Solvents:</span><strong class="text-emerald-800">0% (Zero DCM)</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-Step Reaction Strip -->
+      <div class="bg-white border border-slate-300 rounded p-1.5 text-[10px] text-slate-800 mt-1">
+        <strong class="text-slate-950">Turnkey 3-Step Green Synthesis:</strong>
+        <span class="text-slate-700 ml-1">
+          <strong>(1)</strong> L-Cysteine + Benzaldehyde in bio-EtOH (91% yield) → 
+          <strong>(2)</strong> N-acylation via S-acetylmercaptosuccinic anhydride in 2-MeTHF (88.5% yield) → 
+          <strong>(3)</strong> Aqueous deprotection with 1M NaOH in degassed H₂O (94% yield).
+        </span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== PUBLICATION FIGURES GALLERY (54mm vertical budget) ==================== -->
+  <section class="mt-2 pt-1.5 border-t-2 border-slate-950 flex-shrink-0">
+    <div class="flex justify-between items-baseline mb-1">
+      <div class="font-bold text-[11px] uppercase tracking-wider text-slate-950">
+        Empirical Publication Figures (300 DPI) • NVIDIA RTX 5070 Ti &amp; Meta ESM-2 Inferences
+      </div>
+      <div class="text-[10px] font-mono text-slate-600">
+        Reproducible Code: <a href="https://anonymous.4open.science/r/cd-gap1-DE6F" class="text-blue-700 underline font-bold">https://anonymous.4open.science/r/cd-gap1-DE6F</a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-2.5">
+      <!-- Fig 2: ESM-2 DMS Heatmap -->
+      <div class="bg-slate-50 border border-slate-300 rounded p-1 text-center">
+        <img src="figure4_real_esm2_dms_heatmap.png" alt="ESM-2 DMS Heatmap" class="w-full h-24 object-contain rounded border border-slate-200 bg-white mb-0.5">
+        <div class="text-[9.5px] font-bold text-slate-950">Fig. 1 | ESM-2 Deep Mutational Scan</div>
+        <div class="text-[8.5px] text-slate-600 leading-tight">171 live GPU inferences. Catalytic core has 0% viability; loops show plastic escape.</div>
+      </div>
+
+      <!-- Fig 3: MCTS Entropy Convergence -->
+      <div class="bg-slate-50 border border-slate-300 rounded p-1 text-center">
+        <img src="figure1_mcts_entropy_convergence.png" alt="MCTS Entropy Convergence" class="w-full h-24 object-contain rounded border border-slate-200 bg-white mb-0.5">
+        <div class="text-[9.5px] font-bold text-slate-950">Fig. 2 | MCTS Policy Entropy Collapse</div>
+        <div class="text-[8.5px] text-slate-600 leading-tight">Entropy drops 1.006 → 0.449 nats as simulation budget scales (N=5 to 100).</div>
+      </div>
+
+      <!-- Fig 4: RDKit Radar -->
+      <div class="bg-slate-50 border border-slate-300 rounded p-1 text-center">
+        <img src="figure2_rdkit_radar_pharmacophore.png" alt="Pharmacophore Radar" class="w-full h-24 object-contain rounded border border-slate-200 bg-white mb-0.5">
+        <div class="text-[9.5px] font-bold text-slate-950">Fig. 3 | RDKit Physicochemical Radar</div>
+        <div class="text-[8.5px] text-slate-600 leading-tight">Lipinski Ro5 compliance comparing Captopril seed vs 14B invariant chelator.</div>
+      </div>
+
+      <!-- Fig 5: Escape Resilience Profile -->
+      <div class="bg-slate-50 border border-slate-300 rounded p-1 text-center">
+        <img src="figure3_mutational_escape_comparison.png" alt="Mutational Escape Comparison" class="w-full h-24 object-contain rounded border border-slate-200 bg-white mb-0.5">
+        <div class="text-[9.5px] font-bold text-slate-950">Fig. 4 | Multi-Variant Escape Profile</div>
+        <div class="text-[8.5px] text-slate-600 leading-tight">&lt; 3.8% affinity loss across clinical variants (NDM-4, NDM-5, NDM-7) vs 43.5% greedy loss.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER & CITATIONS (24mm vertical budget) ==================== -->
+  <footer class="mt-1 pt-1 border-t border-slate-300 flex justify-between items-center text-[9px] text-slate-600 flex-shrink-0">
+    <div class="space-y-0.5 max-w-4xl">
+      <div class="font-bold text-slate-800">References:</div>
+      <div class="leading-tight text-[8.5px]">
+        1. King et al. <em>Nature</em> 510:503 (2014) • 
+        2. Rives et al. <em>PNAS</em> 118:e2016239118 (2021) • 
+        3. Ertl &amp; Schuffenhauer. <em>J. Cheminf.</em> 1:8 (2009) • 
+        4. Silver et al. <em>Science</em> 362:1140 (2018) • 
+        5. Sheldon. <em>Green Chem.</em> 9:1273 (2007)
+      </div>
+    </div>
+
+    <!-- Code & Symposium Confirmation -->
+    <div class="text-right font-mono text-[9px] text-slate-600 space-y-0.5">
+      <div>Code Repository: <strong class="text-slate-950">https://anonymous.4open.science/r/cd-gap1-DE6F</strong></div>
+      <div>Target PDB: <strong>3SPU</strong> (1.30 Å) | Exact A3 Dimensions: <strong>420 mm × 297 mm</strong></div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
